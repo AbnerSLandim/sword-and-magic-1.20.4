@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "swordandmagic",
+	"version": "${version}",
+	"name": "Sword And Magic",
+	"description": "This is a mod with the aim of bringing an RPG system to Minecraft inspired by systems like dnd, storm and pathfinder",
+	"authors": [
+		"JoyMenosPato"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/swordandmagic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.joymenospato.swordandmagic.SwordAndMagic"
+		],
+		"client": [
+			"net.joymenospato.swordandmagic.SwordAndMagicClient"
+		],
+		"fabric-datagen": [
+			"net.joymenospato.swordandmagic.SwordAndMagicDataGenerator"
+		]
+	},
+	"mixins": [
+		"swordandmagic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
